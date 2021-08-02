@@ -81,18 +81,69 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Models\TM2DBContext.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TM2DBContext.Context1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\TM2DBContext.edmx.sql" />
+    <Content Include="Models\TM2DBContext.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>TM2DBContext1.cs</LastGenOutput>
+    </Content>
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Common\GyomuException.cs" />
+    <Compile Include="Controllers\AbsAPIController.cs" />
     <Compile Include="Controllers\Employee.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\EmployeesController.cs" />
+    <Compile Include="Controllers\GroupController.cs" />
+    <Compile Include="Controllers\Gyomu1Controller.cs" />
+    <Compile Include="Entity\AbsEntity.cs" />
+    <Compile Include="Entity\AbsInputEntity.cs" />
+    <Compile Include="Entity\AbsResponsEntity.cs" />
+    <Compile Include="Entity\InEmployeeEntity.cs" />
+    <Compile Include="Entity\InGroupEntity.cs" />
+    <Compile Include="Entity\OutEmployeeEntity.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GyoumuModel\AbsGyomuModel.cs" />
+    <Compile Include="GyoumuModel\EmployeeDepartmentModel.cs" />
+    <Compile Include="Models\M_GROUP.cs" />
+    <Compile Include="Models\M_SHAIN.cs" />
+    <Compile Include="Models\TM2DBContext.Context.cs" />
+    <Compile Include="Models\TM2DBContext.Context1.cs">
+      <DependentUpon>TM2DBContext.Context.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Models\TM2DBContext.cs" />
+    <Compile Include="Models\TM2DBContext.Designer.cs">
+      <DependentUpon>TM2DBContext.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TM2DBContext1.cs">
+      <DependentUpon>TM2DBContext.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Models\TM2DBContext1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TM2DBContext.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EntityDeploy Include="Models\TM2DBContext.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>TM2DBContext1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\TM2DBContext.edmx.diagram">
+      <DependentUpon>TM2DBContext.edmx</DependentUpon>
+    </Content>
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -103,7 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
