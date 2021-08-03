@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace TM2WEB.Models
+namespace HelloWebAPI.Models
 {
     using System;
     using System.Data.Entity;

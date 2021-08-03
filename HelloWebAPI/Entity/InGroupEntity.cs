@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
-namespace TM2WEB.Entity
+namespace HelloWebAPI.Entity
 {
     public class InGroupEntity : AbsInputEntity
     {

@@ -6,7 +6,7 @@ using System.Net.Http;
 using System.Web.Http;
 
 
-namespace TM2WEB.Controllers
+namespace HelloWebAPI.Controllers
 {
     public abstract class AbsAPIController : ApiController
     {

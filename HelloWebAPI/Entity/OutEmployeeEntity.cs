@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using TM2WEB.Models;
+using HelloWebAPI.Models;
 
-namespace TM2WEB.Entity
+namespace HelloWebAPI.Entity
 {
     public class OutEmployeeEntity : AbsResponseEntity
     {

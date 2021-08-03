@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using TM2WEB.Entity;
-using TM2WEB.Models;
+using HelloWebAPI.Entity;
+using HelloWebAPI.Models;
 
-namespace TM2WEB.GyoumuModel
+namespace HelloWebAPI.GyoumuModel
 {
     public class EmployeeDepartmentModel : AbsGyomuModel
     {

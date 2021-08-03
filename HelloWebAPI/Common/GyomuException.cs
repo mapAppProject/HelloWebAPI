@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace TM2WEB.Common
+namespace HelloWebAPI.Common
 {
     public class GyomuException : Exception
     {

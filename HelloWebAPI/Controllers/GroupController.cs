@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Data;
 using System.Linq;
 using System.Net;
-using TM2WEB.Common;
-using TM2WEB.Entity;
-using TM2WEB.GyoumuModel;
-using TM2WEB.Models;
+using HelloWebAPI.Common;
+using HelloWebAPI.Entity;
+using HelloWebAPI.GyoumuModel;
+using HelloWebAPI.Models;
 using System.Web.Http;
 
-namespace TM2WEB.Controllers
+namespace HelloWebAPI.Controllers
 {
     public class GroupController : ApiController
     {
