@@ -69,7 +69,7 @@ namespace HelloWebAPI.Controllers
         // 詳細については、https://go.microsoft.com/fwlink/?LinkId=317598 をご覧ください。
         [HttpPost]
         // [ValidateAntiForgeryToken]
-        public IHttpActionResult Create([Bind(Include = "EmpID,NameKJ1,NameKJ2,NameKN,StartDate,EndDate,EmployeeKbn,BaseDate,AdYear,BaseAge,AdCareerYear,CareerYear,Mail,Station,Phone,Sex,BreakNum,DaysWorked,College,Department1,Department2,InsMark,InsNum,Job,GroupID,TraGroup,UpdateDate")] M_SHAIN Row_)
+        public IHttpActionResult Create(/*[Bind(Include = "EmpID,NameKJ1,NameKJ2,NameKN,StartDate,EndDate,EmployeeKbn,BaseDate,AdYear,BaseAge,AdCareerYear,CareerYear,Mail,Station,Phone,Sex,BreakNum,DaysWorked,College,Department1,Department2,InsMark,InsNum,Job,GroupID,TraGroup,UpdateDate")]*/ M_SHAIN Row_)
         {
             if (!ModelState.IsValid)
             {
@@ -147,7 +147,7 @@ namespace HelloWebAPI.Controllers
         // 詳細については、https://go.microsoft.com/fwlink/?LinkId=317598 をご覧ください。
         [HttpPost]
         // [ValidateAntiForgeryToken]
-        public IHttpActionResult Edit([Bind(Include = "EmpID,NameKJ1,NameKJ2,NameKN,StartDate,EndDate,EmployeeKbn,BaseDate,AdYear,BaseAge,AdCareerYear,CareerYear,Mail,Station,Phone,Sex,BreakNum,DaysWorked,College,Department1,Department2,InsMark,InsNum,Job,GroupID,TraGroup,UpdateDate")] M_SHAIN Row_)
+        public IHttpActionResult Edit(/*[Bind(Include = "EmpID,NameKJ1,NameKJ2,NameKN,StartDate,EndDate,EmployeeKbn,BaseDate,AdYear,BaseAge,AdCareerYear,CareerYear,Mail,Station,Phone,Sex,BreakNum,DaysWorked,College,Department1,Department2,InsMark,InsNum,Job,GroupID,TraGroup,UpdateDate")]*/ M_SHAIN Row_)
         {
             if (!ModelState.IsValid)
             {

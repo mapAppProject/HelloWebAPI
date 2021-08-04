@@ -66,7 +66,7 @@ namespace HelloWebAPI.Controllers
         // 詳細については、https://go.microsoft.com/fwlink/?LinkId=317598 をご覧ください。
         [HttpPost]
         // [ValidateAntiForgeryToken]
-        public IHttpActionResult GroupCreate([Bind(Include = "GroupID,MemberID,GroupName,GLEmpID,UpdateDate")] M_GROUP Row_)
+        public IHttpActionResult GroupCreate(/*[Bind(Include = "GroupID,MemberID,GroupName,GLEmpID,UpdateDate")]*/ M_GROUP Row_)
         {
             if (!ModelState.IsValid)
             {
@@ -146,7 +146,7 @@ namespace HelloWebAPI.Controllers
         // 詳細については、https://go.microsoft.com/fwlink/?LinkId=317598 をご覧ください。
         [HttpPost]
         // [ValidateAntiForgeryToken]
-        public IHttpActionResult GroupEdit([Bind(Include = "GroupID,MemberID,GroupName,GLEmpID,UpdateDate")] M_GROUP Row_)
+        public IHttpActionResult GroupEdit(/*[Bind(Include = "GroupID,MemberID,GroupName,GLEmpID,UpdateDate")]*/ M_GROUP Row_)
         {
 
             if (!ModelState.IsValid)

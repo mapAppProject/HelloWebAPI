@@ -131,7 +131,11 @@
     <Compile Include="Models\M_SHAIN.cs">
       <DependentUpon>TM2DBContext.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\TM2DBContext.Context.cs" />
+    <Compile Include="Models\TM2DBContext.Context1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TM2DBContext.Context.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\TM2DBContext.cs" />
     <Compile Include="Models\TM2DBContext.Designer.cs">
       <DependentUpon>TM2DBContext.cs</DependentUpon>
